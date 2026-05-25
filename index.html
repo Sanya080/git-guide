@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Довідник команд Git</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f5f5f5; }
+    h1 { color: #333; text-align: center; border-bottom: 3px solid #e44d26; padding-bottom: 10px; }
+    h2 { color: #e44d26; }
+    code { background: #222; color: #fff; padding: 2px 8px; border-radius: 4px; }
+    pre { background: #222; color: #fff; padding: 16px; border-radius: 8px; overflow-x: auto; }
+    .section { background: #fff; padding: 24px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body>
+
+<h1>📖 Довідник команд Git</h1>
+<p style="text-align:center;color:#666;">Командний проєкт веб-студії | Спринт 1</p>
+
+<!-- СЕКЦІЯ 1: Локальна робота -->
+<div class="section" id="local">
+  <h2>🖥️ Локальна робота</h2>
+  <pre>git init</pre>
+  <p>Ініціалізує новий репозиторій у поточній папці.</p>
+  <pre>git status</pre>
+  <p>Показує стан файлів: які змінені, які додані до індексу.</p>
+  <pre>git add .</pre>
+  <p>Додає всі змінені файли до індексу (staging area).</p>
+  <pre>git commit -m "Повідомлення"</pre>
+  <p>Зберігає зміни з коментарем у локальний репозиторій.</p>
+  <pre>git log --oneline</pre>
+  <p>Показує скорочену історію комітів.</p>
+</div>
+
+<!-- СЕКЦІЯ 2: Робота з гілками -->
+<div class="section" id="branches">
+  <h2>🌿 Робота з гілками</h2>
+  <pre>git branch назва-гілки</pre>
+  <p>Створює нову гілку.</p>
+  <pre>git checkout -b назва-гілки</pre>
+  <p>Створює нову гілку і одразу переходить на неї.</p>
+  <pre>git merge назва-гілки</pre>
+  <p>Зливає вказану гілку в поточну.</p>
+  <pre>git branch -d назва-гілки</pre>
+  <p>Видаляє гілку після злиття.</p>
+  <pre>git branch -a</pre>
+  <p>Показує всі гілки, включно з віддаленими.</p>
+</div>
+
+<!-- СЕКЦІЯ 3: Робота з GitHub -->
+<div class="section" id="github">
+  <h2>☁️ Робота з GitHub</h2>
+  <pre>git clone URL</pre>
+  <p>Клонує віддалений репозиторій на локальний комп'ютер.</p>
+  <pre>git push origin назва-гілки</pre>
+  <p>Відправляє гілку на GitHub.</p>
+  <pre>git pull origin main</pre>
+  <p>Завантажує останні зміни з GitHub у локальний репозиторій.</p>
+  <pre>git remote -v</pre>
+  <p>Показує список віддалених репозиторіїв.</p>
+  <pre>git fetch</pre>
+  <p>Завантажує зміни з GitHub, але не зливає їх автоматично.</p>
+</div>
+
+</body>
+</html>
